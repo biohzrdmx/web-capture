@@ -1,0 +1,126 @@
+body, html {
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 40px;
+}
+
+.inner {
+
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.hide 			{ display: none; }
+
+.margins 		{ margin: 15px; }
+.margins-horz 	{ margin: 0 15px; }
+.margins-vert 	{ margin: 15px 0; }
+
+.boxfix 		{ padding: 1px; }
+.boxfix-horz 	{ padding: 0 1px; }
+.boxfix-vert 	{ padding: 1px 0; }
+
+.pull-left 		{ float: left; }
+.pull-right 	{ float: right; }
+
+.text-left 		{ text-align: left; }
+.text-right 	{ text-align: right; }
+.text-center	{ text-align: center; }
+.text-justify 	{ text-align: justify; }
+
+header {
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+	background: rgba(255, 255, 255, 0.85);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+header button {
+
+	border: 1px solid #333C47;
+	cursor: pointer;
+	margin: 6px 15px 0 0;
+	padding: 5px 12px;
+	background: #333C47;
+	color: #F1F1F1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	/* transition */
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+header button:hover {
+
+	background: #465361;
+}
+
+header .measurements {
+
+	margin: 0 200px 0 15px;
+	padding: 7px 0;
+}
+
+header .measurements span {
+
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #5E6F82;
+}
+
+header .measurements span.label {
+
+	border: 1px solid #5E6F82;
+	background: #5E6F82;
+	color: #F1F1F1;
+	padding: 4px 5px;
+	margin-left: 5px;
+	margin-right: 0;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+header .measurements span.value {
+
+	border: 1px solid #5E6F82;
+	border-left: none;
+	background: #FFF;
+	color: #556475;
+	padding: 4px 5px;
+	margin-left: 0;
+	margin-right: 5px;
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+header .measurements span i {
+
+	text-transform: lowercase;
+}
